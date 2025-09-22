@@ -53,7 +53,7 @@ df[num_cols] = scaler.fit_transform(df[num_cols])
 - Visualize outliers with boxplots.
 - Remove outliers using the IQR method.
 ```python
-  plt.figure(figsize=(12,6))
+plt.figure(figsize=(12,6))
 for i, col in enumerate(num_cols, 1):
     plt.subplot(2,2,i)
     sns.boxplot(x=df[col], color='lightgreen')
